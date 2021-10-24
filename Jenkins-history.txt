@@ -1,0 +1,28 @@
+[root@ip-172-31-16-19 ec2-user]# history
+
+
+    1  yum install -y java-1.8.0-openjdk-devel.x86_64
+
+
+    2  yum install -y git
+
+
+    3  sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+    4  sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+    5  sudo yum install -y apache-maven
+
+
+    6  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+    7  sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+    8  yum install -y jenkins -y
+
+
+    9  service jenkins start
+
+
+   10  cat /var/lib/jenkins/secrets/initialAdminPassword
+
+   11  history
+[root@ip-172-31-16-19 ec2-user]#
+[root@ip-172-31-16-19 ec2-user]#
+[root@ip-172-31-16-19 ec2-user]#
